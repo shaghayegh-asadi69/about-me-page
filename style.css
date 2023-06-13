@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: rgb(245, 238, 230);
   font-family: "Josefin Sans", sans-serif;
-  
+  box-sizing: border-box;
 
 }
 header h1{
@@ -18,20 +18,36 @@ h3{
 }
 
 section{
+    letter-spacing: 1px;
+
     color: rgb(186, 132, 107);
     font-size: 30px;
+letter-spacing: 0.8px;
+
 }
 .first-sec{
-    padding: 20px;
+            padding: 20px;
 
 }
-.seond-sec{
+.second-sec{
         padding: 20px;
-         font-size: 30px;
-
 
 }
 .third-sec{
         padding: 20px;
 
+}
+#btn{
+    font-weight: 100;
+    margin: 30px;
+     margin-left: 50%;
+         transform: translate(-50%);
+   padding: 10px;
+background-color: bisque;
+border: 2px solid rgb(183, 126, 137);
+border-radius: 5px;
+align-items:center ;
+justify-content: center;
+cursor: pointer;
+color: rgb(136, 115, 156);
 }
