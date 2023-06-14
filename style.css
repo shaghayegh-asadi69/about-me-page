@@ -4,50 +4,54 @@ body {
   background-color: rgb(245, 238, 230);
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
-
 }
-header h1{
-    text-align: center;
-    font-size: 30px;
-    color: rgb(240, 121, 121);
-    margin: 25px;
-
+header{
+      border-radius: 30px;
+background-color: beige;
+height: 40px;
 }
-h3{
-                  font-size: 30px
+header h1 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(235, 151, 151);
+  margin: 25px;
 }
 
-section{
-    letter-spacing: 1px;
-
-    color: rgb(186, 132, 107);
-    font-size: 30px;
-letter-spacing: 0.8px;
-
+h3 {
+  font-size: 30px;
 }
-.first-sec{
-            padding: 20px;
 
-}
-.second-sec{
-        padding: 20px;
+section {
+  letter-spacing: 1px;
 
+  color: rgb(186, 132, 107);
+  font-size: 30px;
+  letter-spacing: 0.8px;
 }
-.third-sec{
-        padding: 20px;
-
+.first-sec {
+  padding: 15px;
 }
-#btn{
-    font-weight: 100;
-    margin: 30px;
-     margin-left: 50%;
-         transform: translate(-50%);
-   padding: 10px;
-background-color: bisque;
-border: 2px solid rgb(183, 126, 137);
-border-radius: 5px;
-align-items:center ;
-justify-content: center;
-cursor: pointer;
-color: rgb(136, 115, 156);
+.second-sec {
+  padding: 15px;
+}
+.third-sec {
+  padding: 15px;
+}
+.btn {
+  font-weight: 100;
+  margin: 5px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  background-color: beige;
+  border: 2px solid rgb(183, 126, 137);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgb(136, 115, 156);
+}
+.top-ten{
+    padding: 20px;
+    margin: 20px;
 }
