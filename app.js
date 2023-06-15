@@ -15,7 +15,7 @@ if (userClub === "yes" || userClub === "y") {
 }
 
 btn.addEventListener("click", function () {
-  let getReady = prompt("Are you ready to go?")
+  let getReady = prompt("Are you ready to go?");
   if (getReady === "yes" || getReady === "y") {
     //console.log("I bet you are a good one!");
     alert("let's go for it!" + userName);
@@ -40,28 +40,35 @@ btn.addEventListener("click", function () {
   }
 });
 
-let points = 0;
-const number = 5;
 btnSecond.addEventListener("click", function () {
+  // const number = "7";
+  const number = Math.floor(Math.random() * 10 + 1);
+  console.log(number);
 
-let answer = prompt("Guess a number between 1 and 10");
-for (let i = 4; i >=0 ; i--) {
-  if (i === 0) {
-    alert("sorry you are out of attempts");
-    break;
+  for (let i = 2; i >= 0; i--) {
+    let guesses = i + 1;
+
+    let guess = prompt(
+      "Guess a number between 1 and 10! you have " + guesses + " attempts"
+    );
+
+    const guessNum = parseInt(guess);
+
+    if (guessNum === number) {
+      // console.log("You win");
+      alert("You win");
+      break;
+    } else if (guessNum < number) {
+      // console.log("to low");
+      alert("to low");
+    } else if (guessNum > number) {
+      // console.log("to high");
+      alert("to high");
+    }
+
+    if (i === 0) {
+      alert("The correct number was " + number);
+      break;
+    }
   }
-
-  if (answer < number) {
-    alert("try again,too low.");
-        attempts = prompt("you have" + i + "attempts left");
-
-  } else if (answer > number) {
-    alert("try again,too high.");
-    attempts = prompt("you have" + i + "attempts left");
-  } else {
-    points++;
-    alert("Are you a mind reader?");
-    break;
-  }
-}
-})
+});
