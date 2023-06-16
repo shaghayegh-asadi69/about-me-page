@@ -4,7 +4,7 @@ let btnSecond = document.getElementById("btn-second");
 let userName = prompt("Heey what's your name?");
 alert("nice to meet you , " + userName);
 
-let userClub = prompt("Do you want to be a member in our club?!");
+let userClub = prompt("Do you want to be a member in our club?!".toLowerCase());
 //console.log(userClub);}
 if (userClub === "yes" || userClub === "y") {
   //console.log("nice to have you!");
@@ -13,9 +13,9 @@ if (userClub === "yes" || userClub === "y") {
   //console.log("no waay!");
   alert("no waaay!");
 }
-
+/*
 btn.addEventListener("click", function () {
-  let getReady = prompt("Are you ready to go?");
+  let getReady = prompt("Are you ready to go?").toLowerCase();;
   if (getReady === "yes" || getReady === "y") {
     //console.log("I bet you are a good one!");
     alert("let's go for it!" + userName);
@@ -23,7 +23,7 @@ btn.addEventListener("click", function () {
     alert("I see!");
   }
 
-  let userJob = prompt("Are you currently a student?!");
+  let userJob = prompt("Are you currently a student?!").toLowerCase();
   if (userJob === "yes" || userJob === "y") {
     //console.log("I bet you are a good one!");
     alert("I bet you are a good one! " + userName);
@@ -39,11 +39,10 @@ btn.addEventListener("click", function () {
     alert("I'm really sorry to hear that " + userName);
   }
 });
-
+*/
 btnSecond.addEventListener("click", function () {
-  // const number = "7";
-  const number = Math.floor(Math.random() * 10 + 1);
-  console.log(number);
+  const number = "7";
+//  console.log(number);
 
   for (let i = 2; i >= 0; i--) {
     let guesses = i + 1;
@@ -72,3 +71,22 @@ btnSecond.addEventListener("click", function () {
     }
   }
 });
+
+btn.addEventListener("click", function () {
+
+
+ const theGuessingGame = ["Do you want to be a member in our club?!","Are you ready to go?", "Do you live in Liverpool?!"]
+
+ const theCorrectAnswers = ["yes,I do","yes,let's go!","yes,I live in Liverpool" ]
+
+ const possibleAnswers= ["nope,I'm  good","you go first", "why would I"]
+
+ for (i = 0; i < 3; i++) {
+   let answer = prompt(theGuessingGame[i]);
+   console.log(theGuessingGame);
+   if (answer == "yes") {alert (theCorrectAnswers[i]);
+     //You need an array for your responses
+   } else if (answer == "no") {alert(possibleAnswers[i]);
+     //you need an array for if they respond incorrectly
+   }
+ }});
